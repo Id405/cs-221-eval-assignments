@@ -1,0 +1,57 @@
+\documentclass{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[default]{gillius}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{hyperref}
+
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\alph{subsection}.}
+
+\title{CS 221 Numbers Evaluation Assignment}
+\author{Lily Larsen}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{}
+
+\section{}
+
+\section{}
+
+\section{}
+
+\section{}
+\subsection{}
+\begin{align*}
+    \text{min}&: 0 \\
+    \text{max}&: 2^{43} - 1
+\end{align*}
+\subsection{}
+\begin{align*}
+    \text{min}&: -2^{42} \\
+    \text{max}&: 2^{42} - 1
+\end{align*}
+\subsection{}
+\begin{align*}
+    \text{min}&: 0 \\
+    \text{max}&: 2^{11} - 1
+\end{align*}
+\subsection{}
+\begin{align*}
+    \text{min}&: -2^{10} \\
+    \text{max}&: 2^{10} - 1
+\end{align*}
+\section{}
+\subsection{}
+The largest tiny floating point would have a sign of \(0\), an exponent of \(7\) (or \(1110_2 - 7\)) and a mantissa of \(1.875\) (or \(1.111_2\)), and so would equal \((-1)^{0} \cdot 1.875 \cdot 2^{7} = 240\). The second-largest tiny floating point would have the same sign and exponent and a mantissa of \(1.75\) (or \(1.111_2\)) which would equal \((-1)^0 \cdot 1.75 \cdot 2^{7} = 224\). So, the difference between the largest non-infinite number representable with tiny floating points and the second largest would be \(240-224=16\).
+\subsection{}
+The smallest positive tiny floating point would have a sign of \(0\), an exponent of \(-6\) (or \(0000_2\)) and a mantissa of \(0.125\) (or \(0.001_2\) due to denormalized encoding), and so would equal \((-1)^{0} \cdot 0.125 \cdot 2^{-6} \approx 0.001953125 = 0.000000001_2\). The second smallest would have the same sign and exponent and a mantissa of 0.25 (or \(0.010_2\)) which would equal \((-1)^{0} \cdot 0.25 \cdot 2^{-6} \approx 0.00390625\) or exactly \(0.00000001_2\). So the difference between the two would approximately be \( 0.00390625 - 0.001953125 \approx 0.001953125 = 0.000000001_2 \).
+\end{document}

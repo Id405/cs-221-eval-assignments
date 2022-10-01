@@ -1,0 +1,43 @@
+\documentclass{article}
+
+\usepackage{minted}
+
+\usepackage{geometry}
+\geometry{
+  paper=a4paper,
+  margin=1in,
+  includeheadfoot
+}
+
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\alph{subsection}.}
+\newcommand{\nicecode}[2]{\inputminted[linenos=true,breaklines,fontsize=\small]{#1}{#2}}
+
+\title{Intro C Evaluation Assignment}
+\date{09/22/2022}
+\author{Lily Larsen}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{}
+\nicecode{c}{1.c}
+\newpage
+
+\section{}
+\nicecode{c}{2.c}
+\newpage
+
+\section{}
+\nicecode{c}{3.c}
+\newpage
+
+\section{}
+\nicecode{c}{4.c}
+\newpage
+
+\section{Makefile}
+\nicecode{make}{makefile}
+
+\end{document}

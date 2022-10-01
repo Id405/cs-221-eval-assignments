@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{// the divine teachings of the sacred text (https://code.jsoftware.com/wiki/Essays/Incunabulum) will reveal all truths.}
+\PYG{c+cp}{\PYGZsh{}include}\PYG{+w}{ }\PYG{c+cpf}{\PYGZlt{}stdio.h\PYGZgt{}}
+\PYG{k}{typedef}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{I}\PYG{p}{;}
+\PYG{c+cp}{\PYGZsh{}define P printf}
+\PYG{c+cp}{\PYGZsh{}define S sizeof}
+\PYG{c+cp}{\PYGZsh{}define R return}
+\PYG{c+cp}{\PYGZsh{}define N continue}
+\PYG{c+cp}{\PYGZsh{}define B break}
+\PYG{c+cp}{\PYGZsh{}define F(i,s,e) for(I i=s;i\PYGZlt{}e;i++)}
+\PYG{n}{I}\PYG{+w}{ }\PYG{o}{*}\PYG{n+nf}{find\PYGZus{}divisor}\PYG{p}{(}\PYG{n}{I}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{[],}\PYG{n}{I}\PYG{+w}{ }\PYG{n}{l}\PYG{p}{)\PYGZob{}}\PYG{n}{I}\PYG{+w}{ }\PYG{n}{r}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{];}\PYG{n}{F}\PYG{p}{(}\PYG{n}{i}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{n}{l}\PYG{p}{)\PYGZob{}}\PYG{n}{F}\PYG{p}{(}\PYG{n}{j}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{n}{l}\PYG{p}{)\PYGZob{}}\PYG{k}{if}\PYG{p}{(}\PYG{n}{i}\PYG{o}{==}\PYG{n}{j}\PYG{p}{)}\PYG{n}{N}\PYG{p}{;}
+\PYG{+w}{ }\PYG{k}{if}\PYG{p}{(}\PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{\PYGZpc{}}\PYG{n}{a}\PYG{p}{[}\PYG{n}{j}\PYG{p}{]}\PYG{o}{==}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{n}{R}\PYG{p}{(}\PYG{n}{I}\PYG{p}{[])\PYGZob{}}\PYG{n}{a}\PYG{p}{[}\PYG{n}{j}\PYG{p}{],}\PYG{n}{a}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]\PYGZcb{};\PYGZcb{}\PYGZcb{}}\PYG{n}{R}\PYG{p}{(}\PYG{n}{I}\PYG{p}{[])\PYGZob{}}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{\PYGZcb{};\PYGZcb{}}
+\PYG{n}{main}\PYG{p}{()\PYGZob{}}\PYG{n}{I}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{[]}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{l+m+mi}{8}\PYG{p}{,}\PYG{l+m+mi}{12}\PYG{p}{,}\PYG{l+m+mi}{20}\PYG{p}{\PYGZcb{};}\PYG{n}{I}\PYG{o}{*}\PYG{+w}{ }\PYG{n}{r}\PYG{o}{=}\PYG{n}{find\PYGZus{}divisor}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,}\PYG{n}{S}\PYG{p}{(}\PYG{n}{a}\PYG{p}{)}\PYG{o}{/}\PYG{n}{S}\PYG{p}{(}\PYG{o}{*}\PYG{n}{a}\PYG{p}{));}\PYG{n}{P}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZpc{}d,\PYGZpc{}d}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s}{\PYGZdq{}}\PYG{p}{,}\PYG{n}{r}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{],}\PYG{n}{r}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]);\PYGZcb{}}
+\end{Verbatim}

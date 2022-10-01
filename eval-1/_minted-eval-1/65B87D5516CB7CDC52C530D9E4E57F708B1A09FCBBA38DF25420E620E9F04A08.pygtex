@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{1}\PYG{o}{:}
+	gcc \PYG{l+m}{1}.c \PYGZhy{}o bin/1
+\PYG{n+nf}{run1}\PYG{o}{:}	1
+	./bin/1
+\PYG{n+nf}{2}\PYG{o}{:}
+	gcc \PYG{l+m}{2}.c \PYGZhy{}o bin/2
+\PYG{n+nf}{run2}\PYG{o}{:}	2
+	./bin/2
+\PYG{n+nf}{3}\PYG{o}{:}
+	gcc \PYG{l+m}{3}.c \PYGZhy{}o bin/3 \PYGZhy{}lm
+\PYG{n+nf}{run3}\PYG{o}{:}	3
+	./bin/3
+\PYG{n+nf}{4}\PYG{o}{:}
+	gcc \PYG{l+m}{4}.c \PYGZhy{}o bin/4
+\PYG{n+nf}{run4}\PYG{o}{:}	4
+	./bin/4
+\end{Verbatim}

@@ -1,0 +1,55 @@
+\documentclass{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[default]{gillius}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{hyperref}
+\usepackage{minted}
+\usepackage{geometry}
+\usepackage{parskip}
+
+\geometry{
+	paper=a4paper,
+	margin=1in,
+	includeheadfoot
+}
+
+\newcommand{\nicecode}[2]{\inputminted[linenos=true,breaklines,fontsize=\small]{#1}{#2}}
+
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\alph{subsection}.}
+
+\newenvironment{verbatimnicecode}[1]
+	{
+		\begin{minted}[linenos=true,breaklines,fontsize=\small]{#1}
+	}
+	{
+		\end{minted}
+	}
+
+\title{CS 221 Assembly Basics Evaluation Assignment}
+\author{Lily Larsen}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{}
+\vspace{2ex} \par
+\url{https://github.com/Id405/cs-221-eval-assignments/blob/main/eval-7/1.cpp}
+\nicecode{cpp}{1.cpp}
+\newpage
+
+\section{}
+\vspace{2ex} \par
+\url{https://github.com/Id405/cs-221-eval-assignments/blob/main/eval-7/2.cpp}
+\nicecode{cpp}{2.cpp}
+\newpage
+
+\newpage
+
+\end{document}
